@@ -1,0 +1,24 @@
+{
+  "name": "preact-cli-workbox-plugin",
+  "version": "1.0.0",
+  "description": "Workbox plugin for preact-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prateekbh/preact-cli-workbox-plugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prateekbh/preact-cli-workbox-plugin/issues"
+  },
+  "homepage": "https://github.com/prateekbh/preact-cli-workbox-plugin#readme",
+  "dependencies": {
+    "preact-cli": "^2.2.1",
+    "workbox-webpack-plugin": "^3.0.0-beta.0"
+  }
+}
