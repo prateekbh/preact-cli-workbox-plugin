@@ -1,6 +1,6 @@
 {
   "name": "preact-cli-workbox-plugin",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha7",
   "description": "Workbox plugin for preact-cli",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/prateekbh/preact-cli-workbox-plugin.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Prateek Bhatnagar",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/prateekbh/preact-cli-workbox-plugin/issues"
@@ -19,6 +19,6 @@
   "homepage": "https://github.com/prateekbh/preact-cli-workbox-plugin#readme",
   "dependencies": {
     "preact-cli": "^2.2.1",
-    "workbox-webpack-plugin": "^3.0.0-beta.0"
+    "workbox-webpack-plugin": "^3.0.0-beta.2"
   }
 }

@@ -1,2 +1,14 @@
 # preact-cli-workbox-plugin
-Workbox plugin for preact-cli
+When you decide to replace the current `sw-precache-webpack-plugin` of `preact-cli`, you might need to disable and bring in new plugin in the huge config object. `preact-cli-workbox-plugin` does this automatically for you out of the box.
+
+## installing
+```
+npm i -D preact-cli-workbox-plugin
+```
+
+## Usage
+`preact-cli-workbox-plugin` exposes two simple interfaces from the surface.
+
+### GenerateSw
+Generates a service worker based. Extensible via custom config.
+
