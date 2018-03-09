@@ -1,6 +1,6 @@
 {
   "name": "preact-cli-workbox-plugin",
-  "version": "1.0.0-alpha7",
+  "version": "1.0.0-alpha8",
   "description": "Workbox plugin for preact-cli",
   "main": "index.js",
   "scripts": {

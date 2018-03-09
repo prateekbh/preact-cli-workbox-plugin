@@ -3,9 +3,9 @@ module.exports = function (config) {
     swDest: 'sw.js',
     navigateFallback: 'index.html',
     navigateFallbackWhitelist: [/^(?!\/__).*/],
-    modifyUrlPrefix: {}
   };
   if (config.cwd) {
+    defaultConfig.modifyUrlPrefix = {};
     defaultConfig.modifyUrlPrefix[config.cwd] = '';
   }
   return defaultConfig;
