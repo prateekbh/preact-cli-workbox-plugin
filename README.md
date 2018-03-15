@@ -29,7 +29,14 @@ Injects the precache manifest inside an existing service worker
 ```
 // in preact.config.js
 const { injectManifest } = require('preact-cli-workbox-plugin');
+const path = require('path');
 export default function(config, env, helpers) {
-  return injectManifest(config, helpers, {swSrc: './template-sw.js'});
+  const swPath = path.join('src', 'sw.js');
+  return injectManifest(config, helpers, {
+    swSrc: swPath
+  });
 }
 ```
+
+
+### **P.S.** : In case you want to change your service worker name please make sure to add your own service worker registeration code. Also, please build using `--no-service-worker` flag

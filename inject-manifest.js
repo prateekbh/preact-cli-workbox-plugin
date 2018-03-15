@@ -4,6 +4,8 @@ const getDefaultConfig = require('./default-config');
 
 module.exports = function(config, helpers, workboxConfig) {
   const defaultConfig = getDefaultConfig(config);
+  delete defaultConfig['navigateFallback'];
+  delete defaultConfig['navigateFallbackWhitelist'];
   const swGenerator = new InjectManifest(Object.assign({}, defaultConfig, workboxConfig));
   return replaceDefaultPugin(config, helpers, swGenerator);
 }
