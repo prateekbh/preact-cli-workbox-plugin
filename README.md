@@ -21,3 +21,15 @@ export default function(config, env, helpers) {
   return generateSw(config, helpers, {});
 }
 ```
+
+
+### InjectManifest
+Injects the precache manifest inside an existing service worker
+
+```
+// in preact.config.js
+const { injectManifest } = require('preact-cli-workbox-plugin');
+export default function(config, env, helpers) {
+  return injectManifest(config, helpers, {swSrc: './template-sw.js'});
+}
+```
