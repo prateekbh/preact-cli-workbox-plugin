@@ -6,6 +6,8 @@ const getESMDefaultConfig = require('./esm-config');
 module.exports = function(config, helpers, workboxConfig) {
   const defaultConfig = getDefaultConfig(config);
   const esmConfig = Object.assign({}, getESMDefaultConfig(config), workboxConfig);
+  esmConfig.swDest = defaultConfig.swDest.substring(0, defaultConfig.swDest.lastIndexOf('.js')) + '-esm.js';
+  esmConfig.include.push(/(\.[\w]{5}\.esm\.js)/);
   const swGenerator = new GenerateSW(Object.assign({}, defaultConfig, workboxConfig));
   const esmSwGenerator = new GenerateSW(esmConfig);
   return replaceDefaultPugin(config, helpers, swGenerator, esmSwGenerator);
