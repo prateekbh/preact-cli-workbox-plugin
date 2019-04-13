@@ -1,4 +1,4 @@
-const replaceDefaultPugin = require('./replace-default-plugin');
+const replaceDefaultPlugin = require('./replace-default-plugin');
 const {GenerateSW} = require("workbox-webpack-plugin");
 const getDefaultConfig = require('./default-config');
 const getESMDefaultConfig = require('./esm-config');
@@ -10,5 +10,5 @@ module.exports = function(config, helpers, workboxConfig) {
   esmConfig.include.push(/(\.[\w]{5}\.esm\.js)/);
   const swGenerator = new GenerateSW(Object.assign({}, defaultConfig, workboxConfig));
   const esmSwGenerator = new GenerateSW(esmConfig);
-  return replaceDefaultPugin(config, helpers, swGenerator, esmSwGenerator);
+  return replaceDefaultPlugin(config, helpers, swGenerator, esmSwGenerator);
 }
