@@ -6,7 +6,10 @@ module.exports = function (config, helpers, newPlugin, esmPlugin) {
       config.plugins.splice(index, 1, newPlugin);
     }
   });
-  if (helpers.getPluginsByName(config, 'BabelEsmPlugin')) {
+  if (pluginInstances.length === 0) {
+    config.plugins.push(newPlugin);
+  }
+  if (esmPlugin && helpers.getPluginsByName(config, 'BabelEsmPlugin')) {
     config.plugins.push(esmPlugin);
   }
   return config;
