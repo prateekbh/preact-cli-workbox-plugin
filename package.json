@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/prateekbh/preact-cli-workbox-plugin#readme",
   "dependencies": {
-    "preact-cli": "^2.2.1",
+    "preact-cli": "^3.4.3",
     "workbox-webpack-plugin": "^3.0.0-beta.2"
   }
 }
